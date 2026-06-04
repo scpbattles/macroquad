@@ -408,7 +408,7 @@ impl PipelinesStorage {
         };
 
         let mut storage = PipelinesStorage {
-            pipelines: Default::default(),
+            pipelines: [const { None }; 10000],
             pipelines_amount: 0,
         };
 
