@@ -376,7 +376,7 @@ struct PipelinesStorage {
 }
 
 impl PipelinesStorage {
-    const MAX_PIPELINES: usize = 32;
+    const MAX_PIPELINES: usize = 10000;
     const TRIANGLES_PIPELINE: GlPipeline = GlPipeline(0);
     const LINES_PIPELINE: GlPipeline = GlPipeline(1);
     const TRIANGLES_DEPTH_PIPELINE: GlPipeline = GlPipeline(2);
